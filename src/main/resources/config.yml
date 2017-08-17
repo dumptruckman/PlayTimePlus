@@ -1,0 +1,12 @@
+database:
+  !!: ConfigurationInfo
+  type: H2
+#  type: MySQL
+#  type: SQLite
+  username: root
+  password: pass
+  url: jdbc:h2:file:times.db
+# for MySQL use "jdbc:mysql://<host>:<port>"
+# common examples:
+#  url: jdbc:mysql://localhost:3306
+#  url: jdbc:mysql://10.0.24.76:5534

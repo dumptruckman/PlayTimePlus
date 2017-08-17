@@ -1,0 +1,23 @@
+name: PlayTimePlus
+main: com.dumptruckman.playtime.PlayTimePlus
+author: dumptruckman
+version: @plugin_version@
+depend: [SpringJdbcLib]
+
+commands:
+  played:
+    description: Shows your (or another player's) playtime stats.
+    permission: playtime.played
+    usage: /<command> [player]
+
+permissions:
+  playtime.*:
+    description: Gives access to all PlayTimePlus commands
+    default: false
+    children:
+      playtime.played: true
+      playtime.played.others: true
+  playtime.played:
+    default: true
+  playtime.played.others:
+    default: OP
